@@ -8,3 +8,4 @@ botasaurus
 validators
 streamlit
 chromedriver-autoinstaller
+selenium
