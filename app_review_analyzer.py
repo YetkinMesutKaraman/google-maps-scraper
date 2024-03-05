@@ -1,8 +1,13 @@
+import chromedriver_autoinstaller
 import pandas as pd
 import streamlit as st
 import validators
 
 from src.gmaps import Gmaps
+
+chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
+# and if it doesn't exist, download it automatically,
+# then add chromedriver to path
 
 TARGET_COLUMNS = ["published_at_date", "rating", "review_text"]
 

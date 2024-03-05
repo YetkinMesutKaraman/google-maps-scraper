@@ -7,3 +7,4 @@ regex
 botasaurus
 validators
 streamlit
+chromedriver-autoinstaller
