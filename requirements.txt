@@ -7,3 +7,4 @@ regex
 botasaurus
 validators
 selenium
+urllib==1.26

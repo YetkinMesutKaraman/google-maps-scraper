@@ -59,7 +59,7 @@ def get_reviews_data(url_str):
         links=[url_str],
         output_folder=output_folder,
         scrape_reviews=True,
-        reviews_max=100,
+        reviews_max=10,
         use_cache=True,
     )
     # if response ok, then create df_reviews
