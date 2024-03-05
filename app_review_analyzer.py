@@ -13,7 +13,7 @@ from src.gmaps import Gmaps
 TARGET_COLUMNS = ["published_at_date", "rating", "review_text"]
 
 
-# output_folder = "./scraped_hotels"
+output_folder = "./scraped_hotels"
 
 if "stage" not in st.session_state:
     st.session_state.stage = 0
@@ -57,6 +57,7 @@ def validate_url():
 def get_reviews_data(url_str):
     response_data = Gmaps.links(
         links=[url_str],
+        output_folder=output_folder,
         scrape_reviews=True,
         reviews_max=700,
         use_cache=True,
